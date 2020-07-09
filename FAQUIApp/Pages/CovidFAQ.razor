@@ -35,7 +35,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        questionList = await Http.GetJsonAsync<FAQ[]>("https://faqfunctionapp20200611160123.azurewebsites.net/api/covidFAQ");
+        questionList = await Http.GetJsonAsync<FAQ[]>("https://faquiapp20200708223225.azurewebsites.net");
     }
 
     public class FAQ
