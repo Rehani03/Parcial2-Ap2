@@ -1,0 +1,54 @@
+﻿@page "/registrofaq"
+@using FAQUIApp.Models 
+
+<EditForm Model="faq" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator/>
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Registro de FAQ</h3>
+        </div>
+
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label>Id:</label>
+                    <InputText @bind-Value="faq.Id" class="form-control" />
+                    <ValidationMessage For="@(() => faq.Id)" />
+                </div>
+                <div class="form-group">
+                    <label>Question:</label>
+                    <InputText @bind-Value="faq.Question" class="form-control" />
+                    <ValidationMessage For="@(() => faq.Question)" />
+                </div>
+                <div class="form-group">
+                    <label>Answer</label>
+                    <InputText @bind-Value="faq.Answer" class="form-control" />
+                    <ValidationMessage For="@(() => faq.Answer)" />
+                </div>
+            </form>
+        </div>
+
+        <div class="card-footer">
+            <div class="form-group text-center" display: inline-block>
+                <button type="button" class="btn btn-lg btn-secondary" @onclick="Nuevo">Nuevo</button>
+                <button type="submit" class="btn btn-lg btn-success">Guardar</button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    FAQ faq = new FAQ();
+
+    private void Guardar()
+    {
+
+    }
+
+    private void Nuevo()
+    {
+        this.faq = new FAQ();
+    }
+
+}

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAQFunctionApp", "FAQFunctionApp\FAQFunctionApp.csproj", "{3BB209A7-1384-4483-84CC-958D539B1C4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAQUIApp", "FAQUIApp\FAQUIApp.csproj", "{341C88FC-10B7-4544-A5AC-B1C0576919E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAQUIApp", "FAQUIApp\FAQUIApp.csproj", "{341C88FC-10B7-4544-A5AC-B1C0576919E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
